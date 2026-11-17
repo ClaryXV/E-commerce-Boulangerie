@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    font-family: "Manrope", sans-serif;
 }
+
+
 body{
-    background-color: #FFF6F9;
+    background-color: #FAF0F2;
 }
 
 header{
@@ -14,7 +18,10 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin-top: 10px;
+    padding-top: 20px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-color: #ffffff;
 }
 .headerLeft ul, .headerRight ul {
     display: flex;
@@ -28,5 +35,27 @@ header{
 }
 
 header .headerContent img {
-    width: 50px;
+    width: 150px;
+}
+
+#logoLien {
+    margin: 0 40px 0 40px;
+}
+
+header ul li:not(:last-child){
+    margin-right: 70px;
+}
+
+header ul li a {
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header ul li {
+    transition: all 0.2s ease;
+}
+
+header ul li:hover{
+    transform: scale(1.03);
 }
