@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #FFF6F9;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+}
+.headerLeft ul, .headerRight ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.headerContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .headerContent img {
+    width: 50px;
+}
