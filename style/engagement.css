@@ -11,8 +11,63 @@
     font-size: 100%;
  }
 
- section .p1,section .p3 {
-   margin-left: 5%;
-   margin-right: 5%;
-   border: 1px solid blue;
+ section .p1,
+ section .p3 {
+    display: flex;
+    justify-content: left;
+    min-height: 200px;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid blue;
+ }
+
+ section .p1 .i1,
+ section .p3 .i3 {
+    order: -1;
+    /* Place t1 et t3 à gauche (en premier) */
+    display: flex;
+    flex: 1;
+    min-height: 200px;
+    border: 1px solid blue;
+ }
+
+ section .p1 .t1,
+ section .p3 .t3 {
+    order: 0;
+    /* Reste à droite de t1 et t3 */
+    display: flex;
+    flex: 1;
+    min-height: 200px;
+    border: 1px solid blue;
+ }
+
+ section .p2 {
+    display: flex;
+    justify-content: left;
+    align-items: stretch;
+    min-height: 200px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    border: 1px solid rgb(255, 0, 0);
+ }
+
+ section .p2 .i2 {
+    order: -1;
+    display: flex;
+    flex: 1;
+
+    min-height: 200px;
+    border: 1px solid rgb(255, 0, 0);
+ }
+
+ section .p2 .t2 {
+    order: 0;
+    display: flex;
+    flex: 1;
+
+    min-height: 200px;
+    border: 1px solid rgb(255, 0, 0);
+ }
  }
