@@ -1,0 +1,40 @@
+ *{margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration:none;
+}
+
+body {
+ background-color: #ecbc8c; 
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+ font-size: 200%;
+ }
+
+.section{
+   .p1{
+      .t1{
+
+      }
+      .i1{
+
+      }
+   }
+
+   .p2{
+      .i2{
+
+      }
+      .t2{
+         
+      }
+   }
+
+   .p1{
+      .t3{
+
+      }
+      .i3{
+         
+      }
+   }
+}
