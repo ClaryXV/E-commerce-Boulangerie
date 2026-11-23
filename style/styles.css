@@ -50,12 +50,148 @@ header ul li a {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
 }
 
 header ul li {
     transition: all 0.2s ease;
 }
 
-header ul li:hover{
-    transform: scale(1.03);
+
+header ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease;
 }
+header ul li a:hover::after{
+    width: 100%;
+}
+
+/* ---------------------------------------CSS CAROUSEL */
+#slider {
+    max-width: 1280px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.sliderTrack {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    border-radius: 25px;
+}
+.sliderTrack::-webkit-scrollbar { 
+    display: none; /*eliot : ça cache la scroll bar dans le carousel */
+}
+
+.slide {
+    position: relative;
+    min-width: 100%;
+    min-height: 380px;
+    background-color: #ead5da;
+    overflow: hidden;
+}
+
+.slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slideCard {
+    position: absolute;
+    left: 30px;
+    bottom: 30px;
+    max-width: 400px;
+    padding: 28px;
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+.slideTag {
+    display: inline-block;
+    margin-bottom: 14px;
+    padding: 6px 14px;
+    background-color: #FAF0F2;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: black;
+}
+
+.slideCard h2 {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: black;
+}
+
+.slideCard p {
+    margin: 10px 0 22px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4a4a4a;
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    background-color: black;
+    color: #ffffff;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+}
+.btn:hover { 
+    transform: scale(1.03); 
+}
+
+
+.slideNav {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 8px 10px;
+    background-color: #ffffff;
+    border-radius: 999px;
+}
+
+.slideNav span {
+    font-size: 13px;
+    font-weight: 700;
+    color: black;
+}
+
+.slideNav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #FAF0F2;
+    color: black;
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+.slideNav a:hover { 
+    background-color: black; 
+    color: #ffffff; 
+}
+
