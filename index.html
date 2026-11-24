@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style/styles.css">
 </head>
+
 <body>
     <header>
         <div class="headerContent">
@@ -18,7 +20,7 @@
                 </ul>
             </div>
             <a id="logoLien" href="index.html"> <img src="img/logo.png" alt="Logo de notre boulangerie MARIGNIER"></a>
-             <div class="headerRight">
+            <div class="headerRight">
                 <ul>
                     <li><a href="histoire.html">Notre histoire</a></li>
                     <li><a href="actu.html">Suivre l'actu</a></li>
@@ -28,64 +30,87 @@
         </div>
     </header>
 
-    <section id="slider" >
-    <div class="sliderTrack">
+    <section id="slider">
+        <!-- btn radio invisibles qui mémorisent la slide active -->
+        <input type="radio" name="slider" id="radio1" checked hidden>
+        <input type="radio" name="slider" id="radio2" hidden>
+        <input type="radio" name="slider" id="radio3" hidden>
 
-        <article class="slide" id="promo1">
-            <img src="img/BG_PAIN.jpg" alt="Viennoiseries et café sur un plateau">
-            <div class="slideCard">
-                <span class="slideTag">Petit-déjeuner</span>
-                <h2>Le duo croissant + café à 3,50 €</h2>
-                <p>Chaque matin avant 10h, dans toutes nos boulangeries.</p>
-                <a class="btn" href="produits.html">Voir les produits</a>
+        <div class="sliderContainer">
+            <div class="sliderTrack">
+
+                <article class="slide" id="promo1">
+                    <img src="img/BG_PAIN.jpg" alt="Viennoiseries et café sur un plateau">
+                    <div class="slideCard">
+                        <span class="slideTag">Petit-déjeuner</span>
+                        <h2>Le duo croissant + café à 3,50 €</h2>
+                        <p>Chaque matin avant 10h, dans toutes nos boulangeries.</p>
+                        <a class="btn" href="produits.html">Voir les produits</a>
+                    </div>
+                    <nav class="slideNav">
+                        <label for="radio3">&#8592;</label>
+                        <span>1 / 3</span>
+                        <label for="radio2">&#8594;</label>
+                    </nav>
+                </article>
+
+                <article class="slide" id="promo2">
+                    <img src="img/BG_PAIN.jpg" alt="Galette des rois dorée">
+                    <div class="slideCard">
+                        <span class="slideTag">Saison</span>
+                        <h2>La galette est de retour</h2>
+                        <p>Frangipane maison, à réserver dès maintenant.</p>
+                        <a class="btn" href="contact.html">Réserver</a>
+                    </div>
+                    <nav class="slideNav">
+                        <label for="radio1">&#8592;</label>
+                        <span>2 / 3</span>
+                        <label for="radio3">&#8594;</label>
+                    </nav>
+                </article>
+
+                <article class="slide" id="promo3">
+                    <img src="img/BG_PAIN.jpg" alt="Pains artisanaux sortant du four">
+                    <div class="slideCard">
+                        <span class="slideTag">Notre savoir-faire</span>
+                        <h2>Pétri, façonné, cuit sur place</h2>
+                        <p>Découvre comment on fait notre pain, du levain au four.</p>
+                        <a class="btn" href="engagements.html">Nos engagements</a>
+                    </div>
+                    <nav class="slideNav">
+                        <label for="radio2">&#8592;</label>
+                        <span>3 / 3</span>
+                        <label for="radio1">&#8594;</label>
+                    </nav>
+                </article>
+
             </div>
-            <nav class="slideNav">
-                <a href="#promo3">&#8592;</a>
-                <span>1 / 3</span>
-                <a href="#promo2">&#8594;</a>
-            </nav>
-        </article>
+        </div>
+    </section>
 
-        <article class="slide" id="promo2">
-            <img src="img/BG_PAIN.jpg" alt="Galette des rois dorée">
-            <div class="slideCard">
-                <span class="slideTag">Saison</span>
-                <h2>La galette est de retour</h2>
-                <p>Frangipane maison, à réserver dès maintenant.</p>
-                <a class="btn" href="contact.html">Réserver</a>
-            </div>
-            <nav class="slideNav">
-                <a href="#promo1">&#8592;</a>
-                <span>2 / 3</span>
-                <a href="#promo3">&#8594;</a>
-            </nav>
-        </article>
-
-        <article class="slide" id="promo3">
-            <img src="img/BG_PAIN.jpg" alt="Pains artisanaux sortant du four">
-            <div class="slideCard">
-                <span class="slideTag">Notre savoir-faire</span>
-                <h2>Pétri, façonné, cuit sur place</h2>
-                <p>Découvre comment on fait notre pain, du levain au four.</p>
-                <a class="btn" href="engagements.html">Nos engagements</a>
-            </div>
-            <nav class="slideNav">
-                <a href="#promo2">&#8592;</a>
-                <span>3 / 3</span>
-                <a href="#promo1">&#8594;</a>
-            </nav>
-        </article>
-
-    </div>
-</section>
 
     <section id="savoirFaire">
+
+        <h2>
+            NOTRE SAVOIR FAIRE
+        </h2>
 
     </section>
 
     <section id="cardsMenu">
-        
+        <h2>
+            Découvrez nos produits
+        </h2>
+
+        <div class="contentMenu">
+            <div class="cardMenu"></div>
+            <div class="cardMenu"></div>
+            <div class="cardMenu"></div>
+            <div class="cardMenu"></div>
+        </div>
+
     </section>
 
 </body>
+
 </html>
