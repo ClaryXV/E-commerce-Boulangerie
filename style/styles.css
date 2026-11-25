@@ -203,9 +203,7 @@ header ul li a:hover::after{
     background-color: black; 
     color: #ffffff; 
 }
-
 /* ------------------------------------------CARDS MENU ACCUEIL */
-
 
 #cardsMenu{
     width: 100%;
@@ -222,16 +220,67 @@ header ul li a:hover::after{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:50px;
+    gap: 50px;
 }
 
 .cardMenu{
     height: 350px;
-    width:250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contentImage{
+    width: 100%;
+    height: 80%;
+    overflow: hidden; /* empeche l'image de dépasser lors du zoom */
+    border-radius: 10px;
 }
 
 .cardMenu img{
     width: 100%;
     height: 100%;
     border-radius: 10px;
+    position: relative;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.cardMenu img:hover{
+    transform: scale(1.05);
+}
+
+#cardsMenu h2{
+    font-family: "Calibre Black", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.cardMenu h3{
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+/* ------------------------------------------FOOTER */
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #ffffff;
+}
+
+.imgFooter img {
+    width: 150px;
 }
