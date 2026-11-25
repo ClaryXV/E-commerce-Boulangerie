@@ -102,7 +102,7 @@ header ul li a:hover::after{
 .slide {
     position: relative;
     min-width: 100%;
-    min-height: 380px;
+    min-height: 600px;
     background-color: #ead5da;
     overflow: hidden;
 }
@@ -222,10 +222,16 @@ header ul li a:hover::after{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap:50px;
 }
 
 .cardMenu{
-    border: 1px solid blue;
-    height: 300px;
-    width: 200px;
+    height: 350px;
+    width:250px;
+}
+
+.cardMenu img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
 }
